@@ -1,0 +1,1478 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/daniel.budden/ontologies/2022/9/onelogin#"
+     xml:base="http://www.semanticweb.org/daniel.budden/ontologies/2022/9/onelogin"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:onelogin="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl">
+        <dc:title xml:lang="en">DRAFT One Login</dc:title>
+        <rdfs:label xml:lang="en">One Login</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#YYMMDD -->
+
+    <rdfs:Datatype rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#YYMMDD"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasConfidence -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasConfidence">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Profile"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Confidence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasCountry -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasCountry"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasCredentialContraIndicator -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasCredentialContraIndicator">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Credential"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Contra-indicator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasCredentialDocumentAttribute -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasCredentialDocumentAttribute">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Document"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Document_Attribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasCredentialDocumentEquivalent -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasCredentialDocumentEquivalent">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Attribute"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Document_Attribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasCredentialIssuer -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasCredentialIssuer">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Issuer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasCredentialVerifier -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasCredentialVerifier">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Verifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasDrivingLicenceIssuingAuthority -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasDrivingLicenceIssuingAuthority">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Driving_Licence"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Driving_Licence_Issuing_Authority"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasEntityRole -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasEntityRole">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Entity"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Entity_Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasEvidence -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasEvidence">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Proof"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Evidence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasIdentity -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasIdentity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Person"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasIdentityEvidenceChecks -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasIdentityEvidenceChecks">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Profile"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Check"/>
+        <rdfs:label rdf:resource="http://www.semanticweb.org/daniel.budden/ontologies/2022/9/hasIdentityChecks"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasIdentityProfile -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasIdentityProfile">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Digital_Identity"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Profile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasInteraction -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasInteraction">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Relying_Party"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Relying_Interaction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasIssuingAuthority -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasIssuingAuthority">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Document"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Issuing_Authority"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasOrganisationRole -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasOrganisationRole">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation_Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasPII -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasPII">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#PIIValuePartition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasPassportIssuingAuthority -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasPassportIssuingAuthority">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Passport"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Passport_Issuing_Authority"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasReliance -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasReliance">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Relying_Interaction"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Digital_Identity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasUniversityDegreeIssuingAuthority -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasUniversityDegreeIssuingAuthority">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#University_Degree"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#University_Degree_Issuing_Authority"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasUserAccount -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasUserAccount">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasUserAccountMandatoryAttributes -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasUserAccountMandatoryAttributes"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasUserContraIndicator -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasUserContraIndicator">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#User_Account"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Contra-indicator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasUtilityBillIssuingAuthority -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasUtilityBillIssuingAuthority">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Utility_Bill"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Utility_Bill_Issuing_Authority"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasVerifiableCredentialIssuer -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasVerifiableCredentialIssuer">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Credential"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Credential_Issuer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasVerifiablePresentation -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasVerifiablePresentation">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Credential"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Presentation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasWaterBillIssuingAuthority -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasWaterBillIssuingAuthority">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Water_Bill"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Water_Bill_Issuing_Authority"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#isCheckedBy -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#isCheckedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Credential"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Check"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#isCredentialisedBy -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#isCredentialisedBy">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#isDigitalTwinOf -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#isDigitalTwinOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Digital_Identity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#isDomiciledIn -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#isDomiciledIn">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#isEnshrinedIn -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#isEnshrinedIn">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#isEvidencedBy -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#isEvidencedBy">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Attribute"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Document_Attribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#isGeneratedBy -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#isGeneratedBy">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Evidence"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Verifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#isLocatedIn">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#isShared -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#isShared">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Presentation"/>
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Relying_Interaction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasActivityHistoryScore -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasActivityHistoryScore">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Check"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasAgeInYears -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasAgeInYears">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Contra-indicator"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasBirthDate -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasBirthDate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasConfidenceLevel -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasConfidenceLevel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Confidence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasContraIndicatorReference -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasContraIndicatorReference">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasContraIndicatorScore -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasContraIndicatorScore">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Contra-indicator"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasExpirationDate -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasExpirationDate"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasFailureIdentifierCode -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasFailureIdentifierCode">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Contra-indicator"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasGivenName -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasGivenName"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasIdentityCheckStrength -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasIdentityCheckStrength">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Check"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N/A</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasIdentityCheckValidity -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasIdentityCheckValidity">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Check"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasIdentityFraudScore -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasIdentityFraudScore">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Check"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasIdentityProfileCode -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasIdentityProfileCode">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Profile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasNationality -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasNationality"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasScore -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasScore">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasSex -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasSex"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasSurname -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasSurname"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasTimestamp">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">ADR 0009 
+Coordinated Universal Time (UTC) without timezone.
+Timestamps may be stored as integers or strings.
+Where stored as integers, they should be stored as the number of seconds, milliseconds or microseconds since the Unix epoch.
+Where stored as strings, they should be stored in RFC3339 format with a Z timezone, for example 1985-04-12T23:20:50.52Z.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasVerificationScore -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasVerificationScore">
+        <rdfs:domain rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Check"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Assertion -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Assertion">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Claim"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Authenticator -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Authenticator">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#User_Account"/>
+        <owl:disjointWith rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Email_Address"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Birth_Certificate -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Birth_Certificate">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Document"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Claim -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Claim">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Credential"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Contra-indicator -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Contra-indicator"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Core_Biographic_Identity_Attribute -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Core_Biographic_Identity_Attribute">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Council_Tax_Bill -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Council_Tax_Bill">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Domestic_Bill"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Country -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Country"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Document -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Document">
+        <owl:disjointWith rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Evidence"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Document_Attribute -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Document_Attribute"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Holder -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Holder">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Entity_Role"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Issuer -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Issuer">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation_Role"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Subject -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Subject">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Entity_Role"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Verifier -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Verifier">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation_Role"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Date_of_Birth -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Date_of_Birth">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Core_Biographic_Identity_Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Digital_Identity -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Digital_Identity">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasUserAccount"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#User_Account"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasUserAccountMandatoryAttributes"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Mandatory_User_Account_Attribute"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Domestic_Bill -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Domestic_Bill">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Document"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Driving_Licence -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Driving_Licence">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Document"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Driving_Licence_Issuing_Authority -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Driving_Licence_Issuing_Authority">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Issuing_Authority"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Dual_Fuel_Bill -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Dual_Fuel_Bill">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Electric_Bill"/>
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Gas_Bill"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Electric_Bill -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Electric_Bill">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Utility_Bill"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Eligibility_Identity_Attribute -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Eligibility_Identity_Attribute">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Email_Address -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Email_Address">
+        <owl:equivalentClass rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Username"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#User_Account"/>
+        <owl:disjointWith rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Password"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Entity -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Entity"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Entity_Role -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Entity_Role"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Evidence -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Evidence"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Gas_Bill -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Gas_Bill">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Utility_Bill"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Attribute -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Attribute">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Check -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Check"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Confidence -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Confidence">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#High_Confidence"/>
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Low_Confidence"/>
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Medium_Confidence"/>
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Very_High_Confidence"/>
+                    <rdf:Description rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Zero_Confidence"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Profile -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Profile"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Issuing_Authority -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Issuing_Authority">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation_Role"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#MFA_App_Token -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#MFA_App_Token">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Authenticator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Mandatory_User_Account_Attribute -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Mandatory_User_Account_Attribute">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasUserAccountMandatoryAttributes"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Authenticator"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasUserAccountMandatoryAttributes"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Email_Address"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasUserAccountMandatoryAttributes"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Password"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#User_Account_Attribute"/>
+        <owl:disjointWith rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Optional_User_Account_Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Metadata -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Metadata">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Credential"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Mobile_Phone_Number -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Mobile_Phone_Number">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Authenticator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#National_Insurance_Card -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#National_Insurance_Card">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Document"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Optional_Identity_Attribute -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Optional_Identity_Attribute">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Optional_User_Account_Attribute -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Optional_User_Account_Attribute">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#User_Account_Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Entity"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation_Role -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation_Role"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#PII -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#PII">
+        <owl:equivalentClass rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#PIIValuePartition"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#PIIValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#PIIValuePartition -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#PIIValuePartition">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#ValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Passport -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Passport">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Document"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Passport_Booklet -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Passport_Booklet">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Passport"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Passport_Issuing_Authority -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Passport_Issuing_Authority">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Issuing_Authority"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Password -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Password">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#User_Account"/>
+        <owl:disjointWith rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Username"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Person -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Person">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Proof -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Proof">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Credential"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Region -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Region">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Relying_Interaction -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Relying_Interaction"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Relying_Party -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Relying_Party">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation_Role"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Subject -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Subject">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Claim"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Team -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Team">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation"/>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Team"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#University_Degree -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#University_Degree">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Document"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#University_Degree_Issuing_Authority -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#University_Degree_Issuing_Authority">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Issuing_Authority"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#User_Account -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#User_Account"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#User_Account_Attribute -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#User_Account_Attribute">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#User_Account"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#User_DoB -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#User_DoB">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#hasPII"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#PII"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Optional_User_Account_Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Username -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Username">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#User_Account"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Utility_Bill -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Utility_Bill">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Domestic_Bill"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Utility_Bill_Issuing_Authority -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Utility_Bill_Issuing_Authority">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Issuing_Authority"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#ValuePartition -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#ValuePartition"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Credential -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Credential"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Credential_Issuer -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Credential_Issuer">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation_Role"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Presentation -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Presentation"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Water_Bill -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Water_Bill">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Utility_Bill"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Water_Bill_Issuing_Authority -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Water_Bill_Issuing_Authority">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Issuing_Authority"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Address_Credential -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Address_Credential">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Address_Verifiable_Credential -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Address_Verifiable_Credential">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Credential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Companies_House -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Companies_House"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#DCS -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#DCS">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#DVA -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#DVA">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Driving_Licence_Issuing_Authority"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#DVLA -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#DVLA">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Driving_Licence_Issuing_Authority"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Drive_Vehicle -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Drive_Vehicle">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Educated_to_Degree_Level -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Educated_to_Degree_Level">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Experian -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Experian">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Verifier"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#GBR -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#GBR">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#GDS -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#GDS">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#HMPO -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#HMPO">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Passport_Issuing_Authority"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#HMRC -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#HMRC">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Relying_Party"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#HM_Land_Registry -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#HM_Land_Registry">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Relying_Party"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#High_Confidence -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#High_Confidence"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Verifiable_Credential -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Identity_Verifiable_Credential">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Credential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Knowledge_Based_Verification -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Knowledge_Based_Verification">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Evidence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Low_Confidence -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Low_Confidence"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Medium_Confidence -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Medium_Confidence"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Social_Work_England -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Social_Work_England">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Relying_Party"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Student_Loans_Company -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Student_Loans_Company"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Thames_Water -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Thames_Water">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Water_Bill_Issuing_Authority"/>
+        <onelogin:hasCountry rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#GBR"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Threat_Intelligence_and_Counter-Fraud -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Threat_Intelligence_and_Counter-Fraud">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Team"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#TransUnion -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#TransUnion"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Travel_Entitlement -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Travel_Entitlement">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Very_High_Confidence -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Very_High_Confidence"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Zero_Confidence -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Zero_Confidence"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#nidirect -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#nidirect">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Relying_Party"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Disclosure_&amp;_Barring_Service -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Disclosure_&amp;_Barring_Service">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Organisation"/>
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Relying_Party"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Office_for_Veterans&apos;_Affairs -->
+
+    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Office_for_Veterans&apos;_Affairs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Issuer"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Credential_Verifier"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Issuing_Authority"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Relying_Party"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Verifiable_Credential_Issuer"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#DCS"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#DVA"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#DVLA"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#Experian"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#GDS"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/danbudden-gds/ontology/main/onelogin.owl#HMPO"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
